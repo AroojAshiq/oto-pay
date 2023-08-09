@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"),
+    url("../fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+      format("truetype");
+}
+
+body,
+p,
+li {
+  font-family: Montserrat;
+}
+h1,
+h2,
+h3.h4,
+h5,
+h6 {
+  font-family: Raleway;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1600px) {
+  .swiper-slide {
+    width: 500px !important;
+  }
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-pagination-bullet {
+  margin-top: 50px !important;
+  height: 5px !important;
+  width: 5px !important; /* Optional: Adjust the opacity of the bullet */
+}
+.swiper-pagination-bullet-active {
+  background-color: #0a2540 !important;
+  height: 5px !important;
+  width: 5px !important; /* Set the background color for the active bullet */
+  opacity: 1; /* Optional: Adjust the opacity of the active bullet */
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 360px;
+  background: white;
+  /* border: 1px solid #000; */
+  margin-top: -35px !important;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 10px !important;
+}
